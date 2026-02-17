@@ -10,5 +10,10 @@ def increase ():
 
 def decrease ():
     counter.set(counter.get() - 1)
-
+def reset():
+    counter.set(0)
+label = tk.Label(root, textvariable=counter, font=("Arial", 40))
+label.pack(pady=20)
+frame = tk.Frame(root)
+frame.pack()
 root.mainloop()
